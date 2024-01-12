@@ -15,7 +15,7 @@ spec:
         app: flask-app
     spec:
       containers:
-      - name: flaskapp
+      - name: flask-app
         image: sanjeevrisbud/flaskapp:latest
         env:
           - name: MYSQL_HOST
