@@ -4,8 +4,10 @@ This is a simple Flask app that interacts with a MySQL database. The app allows 
 ## Prerequisites
 Before you begin, make sure you have the following installed:
 
-Docker
-Git (optional, for cloning the repository)
+<ul>
+<li>Docker</li>
+<li>Git (optional, for cloning the repository)</li>
+</ul>
 
 ## Setup
 Clone this repository (if you haven't already):
@@ -38,8 +40,8 @@ docker-compose up --build
 ```
 Access the Flask app in your web browser:
 
-Frontend: http://localhost
-Backend: http://localhost:5000
+Frontend: http://localhost <br />
+Backend: http://localhost:5000 <br />
 Create the messages table in your MySQL database:
 
 Use a MySQL client or tool (e.g., phpMyAdmin) to execute the following SQL commands:
