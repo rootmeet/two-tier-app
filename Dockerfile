@@ -15,7 +15,7 @@ COPY requirement.txt .
 
 # install plug-ins
 RUN pip install mysqlclient
-RUN pip install --no-cache-dir -r requirment.txt
+RUN pip install --no-cache-dir -r requirments.txt
 
 # copy application code
 COPY . .
