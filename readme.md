@@ -55,7 +55,8 @@ CREATE TABLE messages (
 <li>Interact with the app:</li>
 
 <ul><li>Visit http://localhost to see the frontend. You can submit new messages using the form.</li>
-<li>Visit http://localhost:5000/insert_sql to insert a message directly into the messages table via an SQL query.</li></ul></ol>
+<li>Visit http://localhost:5000/insert_sql to insert a message directly into the messages table via an SQL query.</li></ul>
+</ol>
 
 ## Cleaning Up
 To stop and remove the Docker containers, press Ctrl+C in the terminal where the containers are running, or use the following command:
@@ -64,7 +65,8 @@ To stop and remove the Docker containers, press Ctrl+C in the terminal where the
 docker-compose down
 ```
 ## To run this two-tier application using without docker-compose
-<ul><li>First create a docker image from Dockerfile</li>
+<ul>
+<li>First create a docker image from Dockerfile</li>
 ```
 docker build -t flaskapp .
 ```
@@ -72,7 +74,8 @@ docker build -t flaskapp .
 ```
 docker network create twotier
 ```
-<li>Attach both the containers in the same network, so that they can communicate with each other</li></ul>
+<li>Attach both the containers in the same network, so that they can communicate with each other</li>
+</ul>
 i) MySQL container
 
 ```
