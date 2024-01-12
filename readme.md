@@ -67,12 +67,15 @@ docker-compose down
 ## To run this two-tier application using without docker-compose
 <ul>
 <li>First create a docker image from Dockerfile</li>
+
 ```
 docker build -t flaskapp .
 ```
 <li>Now, make sure that you have created a network using following command</li>
+
 ```
 docker network create twotier
+
 ```
 <li>Attach both the containers in the same network, so that they can communicate with each other</li>
 </ul>
