@@ -63,15 +63,16 @@ To stop and remove the Docker containers, press Ctrl+C in the terminal where the
 docker-compose down
 ```
 ## To run this two-tier application using without docker-compose
-First create a docker image from Dockerfile
+<ul>
+<li>First create a docker image from Dockerfile</li>
 ```
 docker build -t flaskapp .
 ```
-Now, make sure that you have created a network using following command
+<li>Now, make sure that you have created a network using following command</li>
 ```
 docker network create twotier
 ```
-Attach both the containers in the same network, so that they can communicate with each other <br />
+<li>Attach both the containers in the same network, so that they can communicate with each other</li></ul> <br />
 i) MySQL container
 
 ```
@@ -83,10 +84,10 @@ ii) Backend container
 docker run -d --name flaskapp -v mysql-data:/var/lib/mysql -v ./message.sql:/docker-entrypoint-initdb.d/message.sql --network=twotier -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin -e MYSQL_DB=mydb -p 5000:5000 flaskapp:latest
 ```
 ## Notes
-Make sure to replace placeholders (e.g., your_username, your_password, your_database) with your actual MySQL configuration.
+<ul><li>Make sure to replace placeholders (e.g., your_username, your_password, your_database) with your actual MySQL configuration.</li>
 
-This is a basic setup for demonstration purposes. In a production environment, you should follow best practices for security and performance.
+<li>This is a basic setup for demonstration purposes. In a production environment, you should follow best practices for security and performance.</li>
 
-Be cautious when executing SQL queries directly. Validate and sanitize user inputs to prevent vulnerabilities like SQL injection.
+<li>Be cautious when executing SQL queries directly. Validate and sanitize user inputs to prevent vulnerabilities like SQL injection.</li>
 
-If you encounter issues, check Docker logs and error messages for troubleshooting.
+<li>If you encounter issues, check Docker logs and error messages for troubleshooting.</li></ul>
