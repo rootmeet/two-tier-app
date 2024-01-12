@@ -33,18 +33,18 @@ MYSQL_PASSWORD=your_password
 MYSQL_DB=your_database
 ```
 ## Usage
-Start the containers using Docker Compose:
+<ol><li>Start the containers using Docker Compose:</li>
 
 ```
 docker-compose up --build
 ```
-Access the Flask app in your web browser:
+<li>Access the Flask app in your web browser:</li>
 
-Frontend: http://localhost <br />
-Backend: http://localhost:5000 <br />
-Create the messages table in your MySQL database:
+<ul><li>Frontend: http://localhost</li> <br />
+<li>Backend: http://localhost:5000</li></ul><br />
+<li>Create the messages table in your MySQL database:</li>
 
-Use a MySQL client or tool (e.g., phpMyAdmin) to execute the following SQL commands:
+<ul><li>Use a MySQL client or tool (e.g., phpMyAdmin) to execute the following SQL commands:</li></ul>
 
 ```
 CREATE TABLE messages (
@@ -52,10 +52,11 @@ CREATE TABLE messages (
     message TEXT
 );
 ```
-Interact with the app:
+<li>Interact with the app:</li>
 
-Visit http://localhost to see the frontend. You can submit new messages using the form.
-Visit http://localhost:5000/insert_sql to insert a message directly into the messages table via an SQL query.
+<ul><li>Visit http://localhost to see the frontend. You can submit new messages using the form.</li>
+<li>Visit http://localhost:5000/insert_sql to insert a message directly into the messages table via an SQL query.</li></ul></ol>
+
 ## Cleaning Up
 To stop and remove the Docker containers, press Ctrl+C in the terminal where the containers are running, or use the following command:
 
