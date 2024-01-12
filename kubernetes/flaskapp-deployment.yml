@@ -11,7 +11,7 @@ spec:
       app: flask-app
   template:
     metadata:
-      lables:
+      labels:
         app: flask-app
     spec:
       containers:
@@ -19,7 +19,7 @@ spec:
         image: sanjeevrisbud/flaskapp:latest
         env:
           - name: MYSQL_HOST
-            value: "mysql"
+            value: "192.168.68.82"
           - name: MYSQL_USER
             value: "root"
           - name: MYSQL_PASSWORD
