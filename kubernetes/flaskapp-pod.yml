@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: flask-app-pod
+spec:
+  containers:
+  - name: flask-app-pod
+    image: sanjeevrisbud/flaskapp:latest
+    env:
+      - name: MYSQL_HOST
+        value: "mysql"
+      - name: MYSQL_USER
+        value: "root"
+      - name: MYSQL_PASSWORD
+        value: "admin"
+      - name: MYSQL_DB
+        value: "myDB"
+    ports:
+    - containerPort: 5000
+    imagePullPolicy: Always
