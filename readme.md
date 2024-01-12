@@ -40,7 +40,7 @@ docker-compose up --build
 ```
 <li>Access the Flask app in your web browser:</li>
 
-<ul><li>Frontend: http://localhost</li> <br />
+<ul><li>Frontend: http://localhost</li>
 <li>Backend: http://localhost:5000</li></ul><br />
 <li>Create the messages table in your MySQL database:</li>
 
@@ -64,8 +64,7 @@ To stop and remove the Docker containers, press Ctrl+C in the terminal where the
 docker-compose down
 ```
 ## To run this two-tier application using without docker-compose
-<ul>
-<li>First create a docker image from Dockerfile</li>
+<ul><li>First create a docker image from Dockerfile</li>
 ```
 docker build -t flaskapp .
 ```
@@ -73,7 +72,7 @@ docker build -t flaskapp .
 ```
 docker network create twotier
 ```
-<li>Attach both the containers in the same network, so that they can communicate with each other</li></ul> <br />
+<li>Attach both the containers in the same network, so that they can communicate with each other</li></ul>
 i) MySQL container
 
 ```
