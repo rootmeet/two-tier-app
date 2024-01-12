@@ -69,7 +69,7 @@ Now, make sure that you have created a network using following command
 ```
 docker network create twotier
 ```
-Attach both the containers in the same network, so that they can communicate with each other
+Attach both the containers in the same network, so that they can communicate with each other <br />
 i) MySQL container
 
 ```
