@@ -11,7 +11,7 @@ RUN apt-get update -y \
     && rm -rf /var/lib/apt/lists/*
 
 # copy the requirement file into container
-COPY requirement.txt .
+COPY requirements.txt .
 
 # install plug-ins
 RUN pip install mysqlclient
